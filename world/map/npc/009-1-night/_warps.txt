@@ -1,14 +1,14 @@
-// This file is generated automatically. All manually changes will be removed when running the Converter.
+// This file is generated automatically. All manually added changes will be removed when running the Converter.
 // Hurnscald warps
 
-009-1-night.gat,49,55|warp|Hurnscald South Exit|2,-1,008-1-night.gat,78,81
-009-1-night.gat,97,36|warp|Hurnscald East Exit|32767,0,008-1-night.gat,128,61
-009-1-night.gat,35,30|warp|To Hurnscald Inn|32767,-1,009-2-night.gat,50,54
-009-1-night.gat,58,46|warp|To Storage Room|32767,-1,009-2-night.gat,27,106
-009-1-night.gat,59,33|warp|To Archer Shop|32767,-1,009-2-night.gat,95,29
-009-1-night.gat,71,30|warp|To Hurnscald Potion Shop|32767,-1,009-2-night.gat,130,25
-009-1-night.gat,80,31|warp|To Hurnscald Hospital|32767,-1,009-2-night.gat,149,66
-009-1-night.gat,72,44|warp|To Hurnscald House|32767,-1,009-2-night.gat,114,77
-009-1-night.gat,91,46|warp|To Hurnscald Forge|0,-1,009-2-night.gat,182,66
-009-1-night.gat,24,36|warp|Hurnscald West Exit|32767,1,008-1-night.gat,53,61
-009-1-night.gat,49,24|warp|Hurnscald North Exit|2,-1,008-1-night.gat,78,48
+009-1-night,49,55|warp|Hurnscald South#009-1-night0|2,-1,008-1-night,2496,2592
+009-1-night,97,36|warp|Hurnscald East #009-1-night1|-1,0,008-1-night,4096,1952
+009-1-night,35,30|warp|To Hurnscald In#009-1-night2|-1,-1,009-2-night,1600,1728
+009-1-night,58,46|warp|To Storage Room#009-1-night3|-1,-1,009-2-night,864,3392
+009-1-night,59,33|warp|To Archer Shop#009-1-night4|-1,-1,009-2-night,3040,928
+009-1-night,71,30|warp|To Hurnscald Po#009-1-night5|-1,-1,009-2-night,4160,800
+009-1-night,80,31|warp|To Hurnscald Ho#009-1-night6|-1,-1,009-2-night,4768,2112
+009-1-night,72,44|warp|To Hurnscald Ho#009-1-night7|-1,-1,009-2-night,3648,2464
+009-1-night,91,46|warp|To Hurnscald Fo#009-1-night8|0,-1,009-2-night,5824,2112
+009-1-night,24,36|warp|Hurnscald West #009-1-night9|-1,1,008-1-night,1696,1952
+009-1-night,49,24|warp|Hurnscald North#009-1-night10|2,-1,008-1-night,2496,1536
