@@ -7,7 +7,7 @@
 011-4.gat,0,0,0,0|monster|SpikyMushroom|1019,15,0,0,Mob011-4::On1019
 
 
-011-4.gat,0,0,0|script|Mob011-4|-1,
+011-4.gat,0,0,0|script|Mob011-4|32767,
 {
     end;
 

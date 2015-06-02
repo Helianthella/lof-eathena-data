@@ -8,7 +8,7 @@
 009-1-night.gat,0,0,0,0|monster|RedSlime|1008,5,30,20,Mob009-1-night::On1008
 
 
-009-1-night.gat,0,0,0|script|Mob009-1-night|-1,
+009-1-night.gat,0,0,0|script|Mob009-1-night|32767,
 {
     end;
 

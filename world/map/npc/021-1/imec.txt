@@ -3,7 +3,7 @@
 // Using bit 8 and 9 of QUEST_NorthTulimshar (first half of nibble 2)
 // author: Jenalya
 
--|script|#ImecShopConfig|-1,
+-|script|#ImecShopConfig|32767,
 {
 OnInit:
     set $@ImecShopNT_MASK, 0x300;

@@ -1,6 +1,6 @@
 // The scripts associated with the reaper mob summoned by Alacrius in the 027-2
 
-027-4.gat,0,0,0|script|Reaper|-1,
+027-4.gat,0,0,0|script|Reaper|32767,
 {
 OnDead:
     mes "you won!";

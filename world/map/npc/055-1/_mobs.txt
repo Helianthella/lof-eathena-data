@@ -20,7 +20,7 @@
 055-1.gat,0,0,0,0|monster|SpikyMushroom|1019,7,10000,60000,Mob055-1::On1019
 
 
-055-1.gat,0,0,0|script|Mob055-1|-1,
+055-1.gat,0,0,0|script|Mob055-1|32767,
 {
     end;
 

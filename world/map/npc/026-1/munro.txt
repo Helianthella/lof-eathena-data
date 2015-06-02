@@ -39,7 +39,7 @@ L_Exit:
     close;
 }
 
-026-1.gat,25,37,0|script|#AnnualHalloween|-1,
+026-1.gat,25,37,0|script|#AnnualHalloween|32767,
 {
     end;
 

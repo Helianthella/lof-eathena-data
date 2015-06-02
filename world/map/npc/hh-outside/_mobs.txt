@@ -23,7 +23,7 @@ hh-outside.gat,92,90,72,24|monster|Skeleton|1043,2,120000,40000,Mobhh-outside::O
 hh-outside.gat,92,90,72,24|monster|Poltergeist|1047,2,120000,40000,Mobhh-outside::On1047
 
 
-hh-outside.gat,0,0,0|script|Mobhh-outside|-1,
+hh-outside.gat,0,0,0|script|Mobhh-outside|32767,
 {
     end;
 

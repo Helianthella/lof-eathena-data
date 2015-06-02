@@ -32,7 +32,7 @@
 
 // When the reward time started, players can get some candy from Santa, this is saved in the fourth bit of nibble 2
 
--|script|#xmas2012config|-1,{
+-|script|#xmas2012config|32767,{
 OnInit:
     set $@xmas2012_reward_start_day, 25;
     set $@xmas2012_reward_end_day, 6;

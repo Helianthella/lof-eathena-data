@@ -17,7 +17,7 @@
 // state 14: gave present to Eomie
 // state 15: reported back to Anwar and done
 
--|script|#magicfieldNTconfig|-1,
+-|script|#magicfieldNTconfig|32767,
 {
 OnInit:
     set $@magicfieldNT_MASK, NIBBLE_3_MASK;

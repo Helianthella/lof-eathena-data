@@ -16,7 +16,7 @@ somber-cave.gat,123,97,14,47|monster|LavaSlime|1115,5,10000,0,Mobsomber-cave::On
 somber-cave.gat,70,111,89,30|monster|LavaSlime|1115,15,10000,0,Mobsomber-cave::On1115
 
 
-somber-cave.gat,0,0,0|script|Mobsomber-cave|-1,
+somber-cave.gat,0,0,0|script|Mobsomber-cave|32767,
 {
     end;
 

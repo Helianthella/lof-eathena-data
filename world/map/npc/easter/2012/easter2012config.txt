@@ -16,7 +16,7 @@
 // 10 - Player picks one of the options offered by the chef. (keep the pickled beets or change it for a chef hat)
 // 10 - OR Player got the pickled beets and the pan hat wasn't ruined during the process.
 
--|script|#easter2012config|-1,{
+-|script|#easter2012config|32767,{
 OnInit:
     set $@easter2012_start_day, 23;
     set $@easter2012_reward_start_day, 8;

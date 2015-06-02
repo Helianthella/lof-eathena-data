@@ -6,7 +6,7 @@
 // bit 7: unused
 // Author: Jenalya
 
--|script|#hideandseekNTconfig|-1,
+-|script|#hideandseekNTconfig|32767,
 {
 OnInit:
     set $@hideandseekNT_MASK, BYTE_0_MASK;

@@ -232,7 +232,7 @@ L_Done:
     return;
 }
 
--|script|#ClearGlobalVars|-1,
+-|script|#ClearGlobalVars|32767,
 {
 OnInit:
 

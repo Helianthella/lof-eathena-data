@@ -2,4 +2,4 @@
 // Woodland warps
 
 016-1.gat,56,18|warp|To Woodland|1,-1,010-1.gat,56,104
-016-1.gat,20,53|warp|To Woodland Swamp|-1,1,025-1.gat,129,58
+016-1.gat,20,53|warp|To Woodland Swamp|32767,1,025-1.gat,129,58

@@ -3,7 +3,7 @@
 
 
 
-hh-maincave.gat,0,0,0|script|Mobhh-maincave|-1,
+hh-maincave.gat,0,0,0|script|Mobhh-maincave|32767,
 {
     end;
 }

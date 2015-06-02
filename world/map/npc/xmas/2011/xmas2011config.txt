@@ -1,4 +1,4 @@
--|script|#xmas2011config|-1,{
+-|script|#xmas2011config|32767,{
 OnInit:
     set $@xmas2011_start_day, 10;
     set $@xmas2011_reward_start_day, 25;

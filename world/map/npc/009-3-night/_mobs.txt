@@ -6,7 +6,7 @@
 009-3-night.gat,0,0,0,0|monster|SnowFlake|1116,35,0,0,Mob009-3-night::On1116
 
 
-009-3-night.gat,0,0,0|script|Mob009-3-night|-1,
+009-3-night.gat,0,0,0|script|Mob009-3-night|32767,
 {
     end;
 
