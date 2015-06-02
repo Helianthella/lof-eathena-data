@@ -1,6 +1,6 @@
 // Variables used: nibble 0 of QUEST_SouthTulimshar
 
-001-1.gat,50,46,0|script|Mikhail|120,
+001-1.gat,50,46,0|script|Mikhail|120
 {
     // This NPC previously used the variable TMW_Quest
     callfunc "ClearVarTMW_Quest";
@@ -10,7 +10,7 @@
     if (@state >= 6) goto L_Done;
     if (@state == 5) goto L_Progress;
     if (@state == 4) goto L_Start;
-    if (@state < 4) goto L_Convince_Mikhail_First;
+    goto L_Convince_Mikhail_First;
 
 L_Convince_Mikhail_First:
     mes "[Mikhail]";

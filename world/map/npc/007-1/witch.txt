@@ -14,7 +14,7 @@
 //    254: Quest is being ended and cleaned: the hero logged off.
 //    255: Quest is being ended and cleaned: the hero died or he ran out of time
 
-007-1.gat,77,81,0|script|Valia|370,
+007-1.gat,77,81,0|script|Valia|370
 {
     set @illia_sapphire_powder, 3;
     set @illia_amethyst_powder, 1;
@@ -171,10 +171,10 @@ L_MissingTeleportSpellItems:
 
 L_CheckTeleportSpellItems:
     if (
-        (countitem ("SapphirePowder") < @illia_sapphire_powder) ||
-        (countitem ("AmethystPowder") < @illia_amethyst_powder) ||
-        (countitem ("IronPowder") < @illia_iron_powder) ||
-        (countitem ("FrozenYetiTear") < @illia_yeti_tear) ||
+        (countitem ("SapphirePowder") < @illia_sapphire_powder) |
+        (countitem ("AmethystPowder") < @illia_amethyst_powder) |
+        (countitem ("IronPowder") < @illia_iron_powder) |
+        (countitem ("FrozenYetiTear") < @illia_yeti_tear) |
         (countitem ("IcedWater") < @illia_iced_water)
         ) goto L_MissingTeleportSpellItems;
     // someone started the quest in the meantime, so we cancel this one.
@@ -287,7 +287,7 @@ L_ChooseHelper2:
     input $@ILLIA_HELPER2$;
     if ($@ILLIA_HELPER2$ == "")
         goto L_ChooseHelperConfirm2;
-    if (getcharid(3, $@ILLIA_HELPER2$) == getcharid(3, $@ILLIA_HELPER1$) ||
+    if (getcharid(3, $@ILLIA_HELPER2$) == getcharid(3, $@ILLIA_HELPER1$) |
         getcharid(3, $@ILLIA_HELPER2$) == $@ILLIA_HERO_ID)
         goto L_WrongHelper2;
     if (isloggedin(getcharid(3, $@ILLIA_HELPER2$)) == 0)
@@ -337,8 +337,8 @@ L_ChooseHelper3:
     input $@ILLIA_HELPER3$;
     if ($@ILLIA_HELPER3$ == "")
         goto L_ChooseHelperConfirm3;
-    if (getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER2$) ||
-        getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER1$) ||
+    if (getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER2$) |
+        getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER1$) |
         getcharid(3, $@ILLIA_HELPER3$) == $@ILLIA_HERO_ID)
         goto L_WrongHelper3;
     if (isloggedin(getcharid(3, $@ILLIA_HELPER3$)) == 0)
@@ -640,7 +640,7 @@ OnTimer300000:
 
 }
 
-007-1.gat,128,100,0|script|#IlliaDaemon|127,
+007-1.gat,128,100,0|script|#IlliaDaemon|127
 {
 end;
 
@@ -681,9 +681,9 @@ OnTimer4000:
     if (isloggedin($@ILLIA_HERO_ID) == 0)
         end;
     if ($@ILLIA_STATUS == 255 && attachrid($@ILLIA_HERO_ID) && (
-            isin("051-1.gat",1,1,190,80)  ||
-            isin("051-3.gat",1,1,115,130) ||
-            isin("052-1.gat",1,1,100,80)  ||
+            isin("051-1.gat",1,1,190,80)  |
+            isin("051-3.gat",1,1,115,130) |
+            isin("052-1.gat",1,1,100,80)  |
             isin("052-2.gat",1,1,150,100)
         )
         ) goto L_WarpHero;
@@ -721,9 +721,9 @@ L_CheckHelperNeedNotification:
     if (
         $@illia_helper$ != "" &&
         attachrid(getcharid(3, $@illia_helper$)) && (
-            isin("051-1.gat",1,1,190,80)  ||
-            isin("051-3.gat",1,1,115,130) ||
-            isin("052-1.gat",1,1,100,80)  ||
+            isin("051-1.gat",1,1,190,80)  |
+            isin("051-3.gat",1,1,115,130) |
+            isin("052-1.gat",1,1,100,80)  |
             isin("052-2.gat",1,1,150,100)
         )
         ) goto L_NotifyHelperFail;
@@ -779,9 +779,9 @@ L_CleanHelpersWarps:
 L_WarpHelper:
     // Proceed only if the helper is still on one of the quest's maps
     if (
-        isin("051-1.gat",1,1,190,80 ) ||
-        isin("051-3.gat",1,1,115,130) ||
-        isin("052-1.gat",1,1,100,80 ) ||
+        isin("051-1.gat",1,1,190,80 ) |
+        isin("051-3.gat",1,1,115,130) |
+        isin("052-1.gat",1,1,100,80 ) |
         isin("052-2.gat",1,1,150,100)
         ) goto L_DoWarpHelper;
     detachrid;
@@ -873,7 +873,7 @@ L_Start:
 
 }
 
-function|script|UpdateIlliaProgress|,
+function|script|UpdateIlliaProgress
 {
     if ($@illia_progress == 1)
         goto L_Torch1;
@@ -923,42 +923,42 @@ return;
 
 }
 
-007-1.gat,72,88,0|script|#IlliaTorch1|374,
+007-1.gat,72,88,0|script|#IlliaTorch1|374
 {
 end;
 }
 
-007-1.gat,71,85,0|script|#IlliaTorch2|374,
+007-1.gat,71,85,0|script|#IlliaTorch2|374
 {
 end;
 }
 
-007-1.gat,75,70,0|script|#IlliaTorch3|374,
+007-1.gat,75,70,0|script|#IlliaTorch3|374
 {
 end;
 }
 
-007-1.gat,85,71,0|script|#IlliaTorch4|374,
+007-1.gat,85,71,0|script|#IlliaTorch4|374
 {
 end;
 }
 
-007-1.gat,88,69,0|script|#IlliaTorch5|374,
+007-1.gat,88,69,0|script|#IlliaTorch5|374
 {
 end;
 }
 
-007-1.gat,86,68,0|script|#IlliaTorch6|374,
+007-1.gat,86,68,0|script|#IlliaTorch6|374
 {
 end;
 }
 
-007-1.gat,87,68,0|script|#IlliaTorch7|374,
+007-1.gat,87,68,0|script|#IlliaTorch7|374
 {
 end;
 }
 
-007-1.gat,88,67,0|script|#IlliaTorch8|374,
+007-1.gat,88,67,0|script|#IlliaTorch8|374
 {
 end;
 }

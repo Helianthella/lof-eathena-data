@@ -17,7 +17,7 @@
 // state 14: gave present to Eomie
 // state 15: reported back to Anwar and done
 
--|script|#magicfieldNTconfig|32767,
+-|script|#magicfieldNTconfig|32767
 {
 OnInit:
     set $@magicfieldNT_MASK, NIBBLE_3_MASK;
@@ -25,7 +25,7 @@ OnInit:
     end;
 }
 
-022-1.gat,41,46,0|script|Anwar|156,
+022-1.gat,41,46,0|script|Anwar|156
 {
     set @state, ((QUEST_NorthTulimshar & $@magicfieldNT_MASK) >> $@magicfieldNT_SHIFT);
 

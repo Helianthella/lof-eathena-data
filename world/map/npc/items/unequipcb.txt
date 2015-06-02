@@ -2,17 +2,21 @@
 // on any map because of the -1s at the end.
 // Note: the client (I think) has a display bug if this is called
 // during the intial connection's equip hook
-botcheck.gat,0,0,0|script|UnequipCB|32767,-1,-1
+botcheck.gat,0,0,0|script|UnequipCB|32767
 {
+    goto L_Proceed;
 
 OnUnequip:
+    goto L_Proceed;
+
+L_Proceed:
     unequipbyid (@unequip_slot - 1);
     set @unequip_slot, 0;
     end;
 }
 
 // Paired with unequipcb
-function|script|UnequipLater|,
+function|script|UnequipLater
 {
     // if there are multiple items that want to be removed,
     // only schedule one timer - scripts will be called again
@@ -21,6 +25,7 @@ function|script|UnequipLater|,
 
     set @unequip_slot, (@slotId + 1);
     addtimer 0, "UnequipCB::OnUnequip";
+    goto L_Return;
 
 L_Return:
     return;

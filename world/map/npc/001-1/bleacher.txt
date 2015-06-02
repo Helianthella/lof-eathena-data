@@ -1,6 +1,6 @@
 //
 
-001-1.gat,27,53,0|script|Candide|156,
+001-1.gat,27,53,0|script|Candide|156
 {
     mes "[Candide]";
     mes "\"I've figured out how that volcanic ash bleaches cloth.";
@@ -12,13 +12,13 @@
     if (Zeny < 5000) goto L_no_money;
 
     menu
-        "I'd like to bleach something.", -,
+        "I'd like to bleach something.", L_bleach_menu,
         "No thanks.", L_Close;
 
 L_bleach_menu:
     if (countitem("PileOfAsh") < 3) goto L_no_ash;
     if (Zeny < 5000) goto L_no_money;
-    
+
     mes "[Candide]";
     mes "\"What would you like to bleach?\"";
     next;
@@ -227,18 +227,19 @@ L_choose_color:
     next;
 
     menu
-        "Red.", -,
-        "Green.", -,
-        "Dark Blue.", -,
-        "Yellow.", -,
-        "Light Blue.", -,
-        "Pink.", -,
-        "Black.", -,
-        "Orange.", -,
-        "Purple.", -,
-        "Dark Green.", -,
+        "Red.", L_color_chosen,
+        "Green.", L_color_chosen,
+        "Dark Blue.", L_color_chosen,
+        "Yellow.", L_color_chosen,
+        "Light Blue.", L_color_chosen,
+        "Pink.", L_color_chosen,
+        "Black.", L_color_chosen,
+        "Orange.", L_color_chosen,
+        "Purple.", L_color_chosen,
+        "Dark Green.", L_color_chosen,
         "Nevermind.", L_Close;
 
+L_color_chosen:
     set @del, @dyeBase + @menu - 1;
 
     if (countitem(@del) == 0) goto L_no_item;
@@ -247,42 +248,43 @@ L_choose_color:
     getitem @normal, 1;
     delitem "PileOfAsh", 3;
     set Zeny, Zeny - 5000;
-    
+
     goto L_again;
 
 L_savior_armor:
     mes "[Candide]";
     mes "\"And the color?\"";
     next;
-    
+
     // No purple - purple is Royal Savior Armor.
     menu
-        "Red.", -,
-        "Green.", -,
-        "Dark Blue.", -,
-        "Yellow.", -,
-        "Light Blue.", -,
-        "Pink.", -,
-        "Black.", -,
-        "Orange.", -,
-        "Dark Green.", -,
+        "Red.", L_savior_color,
+        "Green.", L_savior_color,
+        "Dark Blue.", L_savior_color,
+        "Yellow.", L_savior_color,
+        "Light Blue.", L_savior_color,
+        "Pink.", L_savior_color,
+        "Black.", L_savior_color,
+        "Orange.", L_savior_color,
+        "Dark Green.", L_savior_color,
         "Nevermind.", L_Close;
-    
+
+L_savior_color:
     callfunc "SaviorColors";
-    
+
     set @which_armor$, @savior_armors$[@menu - 1];
-    
+
     callfunc "ClearSaviorColors";
-    
+
     if (countitem(@which_armor$) == 0) goto L_no_item;
-    
+
     delitem @which_armor$, 1;
     getitem "WhiteSaviorArmor", 1;
     delitem "PileOfAsh", 3;
     set Zeny, Zeny - 5000;
-    
+
     set @which_armor$, "";
-    
+
     goto L_again;
 
 L_again:

@@ -1,6 +1,6 @@
 // Variables used: nibble 0 of QUEST_SouthTulimshar
 
-001-1.gat,37,44,0|script|Bernard|117,
+001-1.gat,37,44,0|script|Bernard|117
 {
     // This NPC previously used the variable TMW_Quest
     callfunc "ClearVarTMW_Quest";
@@ -15,6 +15,7 @@
     set @TEMP, rand(2);
     if(@TEMP == 0) goto L_Opening0;
     if(@TEMP == 1) goto L_Opening1;
+    goto L_Opening0;
 
 L_Opening0:
     mes "[Bernard]";
@@ -35,8 +36,8 @@ L_Ask:
 
 L_Yes:
     set @TEMP, rand(2);
-    if(@TEMP == 0) goto L_Req0;
     if(@TEMP == 1) goto L_Req1;
+    goto L_Req0;
 
 L_Req0:
     mes "[Bernard]";

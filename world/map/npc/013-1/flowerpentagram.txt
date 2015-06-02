@@ -1,4 +1,4 @@
-013-1.gat,1,1,0|script|#FlowerPentagram|127,
+013-1.gat,1,1,0|script|#FlowerPentagram|127
 {
 end;
 
@@ -88,7 +88,7 @@ S_CleanUp:
     return;
 }
 
-function|script|FlowerPentagramCount|
+function|script|FlowerPentagramCount
 {
     set $@Flower_Pentagram_Mobcount,
         mobcount("013-1.gat", "#FlowerPentagram::OnSquirrelDeath") +

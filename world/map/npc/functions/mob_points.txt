@@ -1,6 +1,6 @@
 // Mob points
 
-function|script|MobPoints|,
+function|script|MobPoints
 {
     if (@mobID < 1002) goto L_Return;
 
@@ -168,6 +168,7 @@ function|script|MobPoints|,
 L_good:
     set @value, 1;
     callfunc "QuestSagathaHappy";
+    goto L_end;
 
 L_end:
     set @value, 0;

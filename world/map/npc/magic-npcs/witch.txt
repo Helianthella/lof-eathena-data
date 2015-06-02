@@ -171,10 +171,10 @@ L_MissingTeleportSpellItems:
 
 L_CheckTeleportSpellItems:
     if (
-        (countitem ("SapphirePowder") < @illia_sapphire_powder) ||
-        (countitem ("AmethystPowder") < @illia_amethyst_powder) ||
-        (countitem ("IronPowder") < @illia_iron_powder) ||
-        (countitem ("FrozenYetiTear") < @illia_yeti_tear) ||
+        (countitem ("SapphirePowder") < @illia_sapphire_powder) |
+        (countitem ("AmethystPowder") < @illia_amethyst_powder) |
+        (countitem ("IronPowder") < @illia_iron_powder) |
+        (countitem ("FrozenYetiTear") < @illia_yeti_tear) |
         (countitem ("IcedWater") < @illia_iced_water)
         ) goto L_MissingTeleportSpellItems;
     // someone started the quest in the meantime, so we cancel this one.
@@ -287,7 +287,7 @@ L_ChooseHelper2:
     input $@ILLIA_HELPER2$;
     if ($@ILLIA_HELPER2$ == "")
         goto L_ChooseHelperConfirm2;
-    if (getcharid(3, $@ILLIA_HELPER2$) == getcharid(3, $@ILLIA_HELPER1$) ||
+    if (getcharid(3, $@ILLIA_HELPER2$) == getcharid(3, $@ILLIA_HELPER1$) |
         getcharid(3, $@ILLIA_HELPER2$) == $@ILLIA_HERO_ID)
         goto L_WrongHelper2;
     if (isloggedin(getcharid(3, $@ILLIA_HELPER2$)) == 0)
@@ -337,8 +337,8 @@ L_ChooseHelper3:
     input $@ILLIA_HELPER3$;
     if ($@ILLIA_HELPER3$ == "")
         goto L_ChooseHelperConfirm3;
-    if (getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER2$) ||
-        getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER1$) ||
+    if (getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER2$) |
+        getcharid(3, $@ILLIA_HELPER3$) == getcharid(3, $@ILLIA_HELPER1$) |
         getcharid(3, $@ILLIA_HELPER3$) == $@ILLIA_HERO_ID)
         goto L_WrongHelper3;
     if (isloggedin(getcharid(3, $@ILLIA_HELPER3$)) == 0)
@@ -679,9 +679,9 @@ OnTimer4000:
     if (isloggedin($@ILLIA_HERO_ID) == 0)
         end;
     if ($@ILLIA_STATUS == 255 && attachrid($@ILLIA_HERO_ID) && (
-            isin("051-1.gat",1,1,190,80)  ||
-            isin("051-3.gat",1,1,115,130) ||
-            isin("052-1.gat",1,1,100,80)  ||
+            isin("051-1.gat",1,1,190,80)  |
+            isin("051-3.gat",1,1,115,130) |
+            isin("052-1.gat",1,1,100,80)  |
             isin("052-2.gat",1,1,150,100)
         )
         ) goto L_WarpHero;
@@ -719,9 +719,9 @@ L_CheckHelperNeedNotification:
     if (
         $@illia_helper$ != "" &&
         attachrid(getcharid(3, $@illia_helper$)) && (
-            isin("051-1.gat",1,1,190,80)  ||
-            isin("051-3.gat",1,1,115,130) ||
-            isin("052-1.gat",1,1,100,80)  ||
+            isin("051-1.gat",1,1,190,80)  |
+            isin("051-3.gat",1,1,115,130) |
+            isin("052-1.gat",1,1,100,80)  |
             isin("052-2.gat",1,1,150,100)
         )
         ) goto L_NotifyHelperFail;
@@ -777,9 +777,9 @@ L_CleanHelpersWarps:
 L_WarpHelper:
     // Proceed only if the helper is still on one of the quest's maps
     if (
-        isin("051-1.gat",1,1,190,80 ) ||
-        isin("051-3.gat",1,1,115,130) ||
-        isin("052-1.gat",1,1,100,80 ) ||
+        isin("051-1.gat",1,1,190,80 ) |
+        isin("051-3.gat",1,1,115,130) |
+        isin("052-1.gat",1,1,100,80 ) |
         isin("052-2.gat",1,1,150,100)
         ) goto L_DoWarpHelper;
     detachrid;

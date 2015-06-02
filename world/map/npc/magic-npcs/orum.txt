@@ -168,9 +168,9 @@ L_List_Materials:
     goto L_Close;
 
 L_Check_Materials:
-    if (countitem("WispPowder") < @B0_WISPPOWDER ||
-        countitem("PoltergeistPowder") < @B0_POLTERGEISTPOWDER ||
-        countitem("SpectrePowder") < @B0_SPECTREPOWDER ||
+    if (countitem("WispPowder") < @B0_WISPPOWDER |
+        countitem("PoltergeistPowder") < @B0_POLTERGEISTPOWDER |
+        countitem("SpectrePowder") < @B0_SPECTREPOWDER |
         countitem("HardSpike") < @B0_HARDSPIKES)
             goto L_Missing_Materials;
 
@@ -406,10 +406,10 @@ L_List_Materials_More:
     goto L_Close;
 
 L_Finished_Gathering_More:
-    if (countitem("IronPowder") < @BT_IRONPOWDER ||
-        countitem("PileOfAsh") < @BT_PILESOFASH ||
-        countitem("GambogeHerb") < @BT_HERBS ||
-        countitem("AlizarinHerb") < @BT_HERBS ||
+    if (countitem("IronPowder") < @BT_IRONPOWDER |
+        countitem("PileOfAsh") < @BT_PILESOFASH |
+        countitem("GambogeHerb") < @BT_HERBS |
+        countitem("AlizarinHerb") < @BT_HERBS |
         countitem("CobaltHerb") < @BT_HERBS)
             goto L_Missing_Materials_More;
 
@@ -480,10 +480,10 @@ L_More_Powder:
     goto L_Close;
 
 L_More_Powder_Make:
-    if (countitem("IronPowder") < @BT_IRONPOWDER ||
-        countitem("PileOfAsh") < @BT_PILESOFASH ||
-        countitem("GambogeHerb") < @BT_HERBS ||
-        countitem("AlizarinHerb") < @BT_HERBS ||
+    if (countitem("IronPowder") < @BT_IRONPOWDER |
+        countitem("PileOfAsh") < @BT_PILESOFASH |
+        countitem("GambogeHerb") < @BT_HERBS |
+        countitem("AlizarinHerb") < @BT_HERBS |
         countitem("CobaltHerb") < @BT_HERBS)
             goto L_Missing_Materials_More;
 

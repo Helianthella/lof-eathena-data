@@ -9,7 +9,7 @@
 // or using GM commands, but scripts (such as this one) can set
 // any value 0-255
 
-function|script|Barber|,
+function|script|Barber
 {
     set @style, getlook(LOOK_HAIR_STYLE);
     set @color, getlook(LOOK_HAIR_COLOR);
@@ -26,6 +26,7 @@ function|script|Barber|,
     mes "Your current style is " + @style$ + " and your current color is " + @color$ + ".";
     set @style$, "";
     set @color$, "";
+    goto L_Main;
 
 L_Main:
     menu
@@ -35,29 +36,30 @@ L_Main:
 
 L_Style:
     menu
-        "Bald", -,
-        "Flat ponytail", -,
-        "Bowl cut", -,
-        "Combed back", -,
-        "Emo", -,
-        "Mohawk", -,
-        "Pompadour", -,
-        "Center parting/Short and slick", -,
-        "Long and slick", -,
-        "Short and curly", -,
-        "Pigtails", -,
-        "Long and curly", -,
-        "Parted", -,
-        "Perky ponytail", -,
-        "Wave", -,
-        "Mane", -,
-        "Bun", -,
-        "Shoulder Length Flick", -,
-        "Fizzy", -,
-        "Long and Clipped", -,
+        "Bald", L_Style_Next,
+        "Flat ponytail", L_Style_Next,
+        "Bowl cut", L_Style_Next,
+        "Combed back", L_Style_Next,
+        "Emo", L_Style_Next,
+        "Mohawk", L_Style_Next,
+        "Pompadour", L_Style_Next,
+        "Center parting/Short and slick", L_Style_Next,
+        "Long and slick", L_Style_Next,
+        "Short and curly", L_Style_Next,
+        "Pigtails", L_Style_Next,
+        "Long and curly", L_Style_Next,
+        "Parted", L_Style_Next,
+        "Perky ponytail", L_Style_Next,
+        "Wave", L_Style_Next,
+        "Mane", L_Style_Next,
+        "Bun", L_Style_Next,
+        "Shoulder Length Flick", L_Style_Next,
+        "Fizzy", L_Style_Next,
+        "Long and Clipped", L_Style_Next,
         "Surprise me", L_RandomStyle,
         "Nah, I'm fine", L_Done;
 
+L_Style_Next:
     if (@menu - 1 == @style)
         goto L_SameStyle;
 
@@ -74,22 +76,23 @@ L_SameStyle:
 
 L_Color:
     menu
-        "Brunette", -,
-        "Green", -,
-        "Dark red", -,
-        "Light purple", -,
-        "Gray", -,
-        "Blonde", -,
-        "Teal", -,
-        "Light red", -,
-        "Blue", -,
-        "Dark purple", -,
-        "Black", -,
-        "Pink", -,
-        "Brown", -,
+        "Brunette", L_Color_Next,
+        "Green", L_Color_Next,
+        "Dark red", L_Color_Next,
+        "Light purple", L_Color_Next,
+        "Gray", L_Color_Next,
+        "Blonde", L_Color_Next,
+        "Teal", L_Color_Next,
+        "Light red", L_Color_Next,
+        "Blue", L_Color_Next,
+        "Dark purple", L_Color_Next,
+        "Black", L_Color_Next,
+        "Pink", L_Color_Next,
+        "Brown", L_Color_Next,
         "Surprise me", L_RandomColor,
         "Nah, I'm fine", L_Done;
 
+L_Color_Next:
     if (@menu - 1 == @color)
         goto L_SameColor;
 
@@ -114,7 +117,7 @@ L_Done:
 
 // Since this is a function, not an NPC, OnInit doesn't work
 // So call this from a real NPC's OnInit (001-1/barber.txt)
-function|script|OnInitBarber|,
+function|script|OnInitBarber
 {
     setarray $@HairStyles$,
         "Bald", "Flat ponytail", "Bowl cut", "Combed back", "Emo", "Mohawk",

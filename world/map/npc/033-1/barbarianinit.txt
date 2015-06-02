@@ -1,4 +1,4 @@
--|script|#barbarian033_1init|32767,
+-|script|#barbarian033_1init|32767
 {
 OnInit:
     set $@Q_Barbarians_MASK, NIBBLE_0_MASK;

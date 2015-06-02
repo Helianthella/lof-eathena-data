@@ -1,13 +1,14 @@
-function|script|SoulMenhir|,
+function|script|SoulMenhir
 {
     mes "[Soul Menhir]";
     mes "(A mystical aura surrounds this stone. You feel mysteriously attracted to it. Something tells you to touch it. What do you do?)";
     next;
 
     menu
-        "Touch it.", -,
+        "Touch it.", L_Touch,
         "Leave it alone.", L_Return;
 
+L_Touch:
     if (Menhir_Activated == 1)
         goto L_Shortversion;
 
@@ -30,10 +31,12 @@ L_Shortversion:
     mes "[Soul Menhir]";
     mes "(A strange sensation flows through you. It feels like your soul leaves your body and becomes one with the stone. As suddenly as the feeling started it stops.)";
     next;
+    goto L_Save;
 
 L_Save:
     if (@x == 0 && @y == 0)
         goto L_FindPoint;
+    goto L_Do_Save;
 
 L_Do_Save:
     savepoint @map$, @x, @y;
