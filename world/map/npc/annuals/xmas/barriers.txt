@@ -31,7 +31,7 @@ L_Return:
 }
 
 // Annual Xmas Boss Fight Door
-030-2.gat,153,21,0|script|#DarkDoor|45,0,0,
+030-2,153,21,0|script|#DarkDoor|45,0,0,
 {
     callfunc "XmasStates";
 
@@ -48,7 +48,7 @@ L_XmasMain:
 
 L_Open:
     if ($@XmasBattleStatus) goto L_BattleInProgress;
-    warp "030-4.gat",34,48;
+    warp "030-4",34,48;
     goto L_Close;
 
 L_BattleInProgress:
@@ -67,7 +67,7 @@ L_Close:
 
 // Annual Xmas secret passage to a trapdoor in Santa's Inn Basement
 
-030-3.gat,100,49,0|script|SmallCrack#XmasPassage|400,0,1,
+030-3,100,49,0|script|SmallCrack#XmasPassage|400,0,1,
 {
     callfunc "XmasStates";
 
@@ -122,7 +122,7 @@ L_QueryWarp:
    goto L_Close;
 
 L_Warp:
-   warp "030-2.gat",47,44;
+   warp "030-2",47,44;
    goto L_Close;
 
 L_Fail:
@@ -134,7 +134,7 @@ L_Close:
 }
 
 // Annual Xmas Escape Hatch
-030-2.gat,48,44,0|script|#BasementDoor|45,0,0,
+030-2,48,44,0|script|#BasementDoor|45,0,0,
 {
     callfunc "XmasStates";
 
@@ -149,7 +149,7 @@ L_XmasMain:
         "No.", L_Close;
 
 L_Open:
-    warp "030-3.gat",100,50;
+    warp "030-3",100,50;
     goto L_Close;
 
 L_NotActive:

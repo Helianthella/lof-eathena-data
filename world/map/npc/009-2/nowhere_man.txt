@@ -1,6 +1,6 @@
 //
 
-009-2.gat,33,94,0|script|Nowhere Man|153,{
+009-2,33,94,0|script|Nowhere Man|153,{
     set @Ironprice, 1000;
     set @Sulphurprice, 1200;
     set @Yellowpowderprice, 6500;

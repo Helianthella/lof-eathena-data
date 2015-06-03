@@ -1,6 +1,6 @@
 // Author: Jenalya, Pihro
 
-009-2.gat,181,56,0|script|Nahrec|311,{
+009-2,181,56,0|script|Nahrec|311,{
     mes "[Nahrec]";
     mes "\"Ah, hello! It is good to see another traveller in this town!\"";
     next;

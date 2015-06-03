@@ -14,7 +14,7 @@
 
 // Please, remove the debug script bofore releasing the quest.
 
-//031-3.gat,215,294,0	script	Debug	204,{
+//031-3,215,294,0	script	Debug	204,{
 
 //	mes "What you want to do?";
 //	menu
@@ -72,7 +72,7 @@
 
 //}
 
-031-3.gat,215,296,0	script	#Golbenez#_M	204,{
+031-3,215,296,0	script	#Golbenez#_M	204,{
 
 	if (Golbenez_Inn_Cost >= 5000000) goto Glb_Inn_Enough;
         if (Xmas2010 > 0) goto L_Intro;

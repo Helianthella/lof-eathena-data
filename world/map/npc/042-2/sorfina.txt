@@ -1,7 +1,7 @@
 // This file is part of the Tutorial
 // Author: Jenalya
 
-042-2.gat,28,26,0|script|Sorfina|154,4,4
+042-2,28,26,0|script|Sorfina|154,4,4
 {
     if (FLAGS & FLAG_TUTORIAL_DONE) goto L_Again;
     if (sorfina == 4) goto L_Heal;
@@ -249,7 +249,7 @@ OnTouch:
     goto L_Start;
 }
 
-042-2.gat,33,27,0|script|#Carpet|32767,1,1
+042-2,33,27,0|script|#Carpet|32767,1,1
 {
     end;
 
@@ -272,7 +272,7 @@ OnTouch:
     close;
 }
 
-042-2.gat,27,23,0|script|Chest#sorfina|111
+042-2,27,23,0|script|Chest#sorfina|111
 {
     if (sorfina > 2) goto L_Empty;
     if (sorfina == 2) goto L_Shirt;
@@ -299,7 +299,7 @@ L_Empty:
     close;
 }
 
-042-2.gat,44,31,0|script|#DoorOut-sorfina|45,0,0
+042-2,44,31,0|script|#DoorOut-sorfina|45,0,0
 {
     end;
 
@@ -307,7 +307,7 @@ OnTouch:
     if ((sorfina < 4)
         && !(FLAGS & FLAG_TUTORIAL_DONE))
             goto L_Block;
-    warp "042-1.gat", 63, 77;
+    warp "042-1", 63, 77;
     end;
 
 L_Block:

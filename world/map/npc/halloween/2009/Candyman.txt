@@ -12,7 +12,7 @@
 // -o11c
 
 // The Candy Man
-009-1.gat,90,27,0	script	The Candy Man	183, {
+009-1,90,27,0	script	The Candy Man	183, {
 
     set @STATE_KNOWS_CANDYMAN, 1;
     set @STATE_FETCH_QUEST, 2;

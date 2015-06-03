@@ -1,7 +1,7 @@
 // The government builing in the south west
 
 // A clerk
-021-2.gat,27,17,0|script|Estard|107
+021-2,27,17,0|script|Estard|107
 {
     mes "[Estard]";
     mes "\"Hello what can I do for you?\"";
@@ -139,7 +139,7 @@ S_give_rings:
     return;
 }
 
-021-2.gat,36,17,0|script|Tathin|107
+021-2,36,17,0|script|Tathin|107
 {
     set @hw2011_npc_id, $@hw2011_npc_tathin;
     if (gettime(7) == $@hw2011_year && gettime(6) == 10 && gettime(5) >= $@hw2011_start_day)
@@ -227,7 +227,7 @@ L_TrickOrTreat:
 }
 
 // Guard
-021-2.gat,20,19,0|script|Guard#govt_in|123,1,1
+021-2,20,19,0|script|Guard#govt_in|123,1,1
 {
     mes "[Guard]";
     mes "\"You can't come back here.\"";

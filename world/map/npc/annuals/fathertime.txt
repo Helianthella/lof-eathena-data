@@ -1,7 +1,7 @@
 // Annual Timer
 // One timer to check to enable all holiday events
 
-botcheck.gat,26,28,0|script|#HolidayConfig|32767
+botcheck,26,28,0|script|#HolidayConfig|32767
 {
 OnInit:
     goto L_StartTimer;

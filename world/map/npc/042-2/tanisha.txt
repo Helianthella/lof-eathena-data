@@ -2,9 +2,9 @@
 // Authors: Jenalya, alastrim
 // Cleanup: o11c
 
-042-2.gat,37,90,0|script|Tanisha|114
+042-2,37,90,0|script|Tanisha|114
 {
-    if (isin("042-2.gat", 30, 85, 36, 89))
+    if (isin("042-2", 30, 85, 36, 89))
         goto L_Fighting;
 
     if (FLAGS & FLAG_TUTORIAL_DONE)  goto L_Tut_Done;
@@ -44,7 +44,7 @@ L_Maggots:
     // since the check happens here, it is actually possible to have
     // more than $@Maggot_MaxHunters in the area at one time
     // but that's not a BIG problem
-    if (getareausers("042-2.gat", 30, 85, 36, 89) >= $@Maggot_MaxHunters)
+    if (getareausers("042-2", 30, 85, 36, 89) >= $@Maggot_MaxHunters)
         goto L_Crowded;
     next;
 
@@ -76,12 +76,12 @@ L_ContinueFight:
     set tanisha, 2;
     set @Maggot_Kills, 0;
     set @time, 0;
-    if (getareausers("042-2.gat", 30, 85, 36, 89) == 0)
+    if (getareausers("042-2", 30, 85, 36, 89) == 0)
         initnpctimer;
-    warp "042-2.gat", 33, 87;
+    warp "042-2", 33, 87;
 
 L_Summon:
-    areamonster "042-2.gat", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
+    areamonster "042-2", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
     end;
 
 L_Stats:
@@ -212,7 +212,7 @@ L_Crowded:
     goto L_Close;
 
 L_Sleep:
-    warp "042-2.gat", 36, 90;
+    warp "042-2", 36, 90;
     mes "[Tanisha]";
     mes "\"What are you doing in there?";
     mes "Sleeping?";
@@ -220,7 +220,7 @@ L_Sleep:
     set @Maggot_Kills, 0;
     set @time, 0;
     close2;
-    if (getareausers("042-2.gat", 30, 85, 36, 89) == 0)
+    if (getareausers("042-2", 30, 85, 36, 89) == 0)
         goto L_CleanUp;
     end;
 
@@ -237,7 +237,7 @@ L_Fail:
     menu
         "Sure!", -,
         "No, I need a rest.", L_Close;
-    if (getareausers("042-2.gat", 30, 85, 36, 89) >= $@Maggot_MaxHunters)
+    if (getareausers("042-2", 30, 85, 36, 89) >= $@Maggot_MaxHunters)
         goto L_Crowded;
     goto L_Fight_Again;
 
@@ -247,17 +247,17 @@ L_Fighting:
 
 OnTimer1000:
     setnpctimer 0;
-    if (getareausers("042-2.gat", 30, 85, 36, 89) == 0)
+    if (getareausers("042-2", 30, 85, 36, 89) == 0)
         goto L_CleanUp;
     // This is needed because multiple players can be in the area at once
-    areatimer "042-2.gat", 30, 85, 36, 89, 0, "Tanisha::OnTick";
+    areatimer "042-2", 30, 85, 36, 89, 0, "Tanisha::OnTick";
     end;
 
 L_CleanUp:
-    killmonster "042-2.gat", "Tanisha::OnMaggotDeath";
+    killmonster "042-2", "Tanisha::OnMaggotDeath";
     set $@Maggot_Hunters, 0;
     stopnpctimer;
-    areamonster "042-2.gat", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
+    areamonster "042-2", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
     end;
 
 OnTick:
@@ -279,16 +279,16 @@ OnMaggotDeath:
         message strcharinfo(0), "Tanisha: Ohh... Irrhk... Eeeeww... They just appear from nowhere!";
     if (@Maggot_Kills == 3)
         message strcharinfo(0), "Tanisha: Yuck... I think I am getting sick.";
-    if (isin("042-2.gat", 30, 85, 36, 89))
+    if (isin("042-2", 30, 85, 36, 89))
         set @Maggot_Kills, @Maggot_Kills + 1;
     if (@Maggot_Kills < 5)
         goto L_Summon;
     // else, complete
-    warp "042-2.gat", 36, 90;
+    warp "042-2", 36, 90;
     set tanisha, 3;
     set @Maggot_Kills, 0;
     set @time, 0;
-    if (getareausers("042-2.gat", 30, 85, 36, 89) == 0)
+    if (getareausers("042-2", 30, 85, 36, 89) == 0)
         goto L_CleanUp;
     end;
 
@@ -298,5 +298,5 @@ L_Close:
 
 OnInit:
     set $@Maggot_MaxHunters, 4;
-    areamonster "042-2.gat", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
+    areamonster "042-2", 30, 85, 36, 89, "", 1002, 1, "Tanisha::OnMaggotDeath";
 }

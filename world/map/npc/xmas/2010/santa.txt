@@ -13,7 +13,7 @@
 //#################################################################################
 
 
-031-3.gat,122,51,0	script	Santa	105,{
+031-3,122,51,0	script	Santa	105,{
 
         if (Sex) set @honorific$, "young hero";
         if (Sex) set @gender$, "boy";

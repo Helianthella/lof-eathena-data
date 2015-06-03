@@ -135,6 +135,6 @@ L_Close:
     close;
 }
 
-// 030-1.gat,91,48,0|script|Debug|105,{
+// 030-1,91,48,0|script|Debug|105,{
 //     callfunc "xmas2012debug";
 // }

@@ -1,4 +1,4 @@
-020-1.gat,67,62,0 script Xmas3 105,{
+020-1,67,62,0 script Xmas3 105,{
         if(XMASQUEST3 == 1) goto L_only_once;
         mes "[Helper Santa]";
         mes "It's Christmas.";

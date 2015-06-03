@@ -1,6 +1,6 @@
 //Written by Ozthokk, scripted by Munkar and edited by Pihro
 
-009-2.gat,110,44,0|script|The Doctor|184,{
+009-2,110,44,0|script|The Doctor|184,{
 
     if (BaseLevel <= 24) goto L_Lvl_too_low; 
    

@@ -251,157 +251,157 @@ L_AlreadyPlaced:
 	close;
 }
 
-007-1.gat,126,63,0	script	Rock	127,{
+007-1,126,63,0	script	Rock	127,{
 	set @object, 0;
 	callfunc "Easter2009Rock";
 }
 
-009-1.gat,66,33,0	script	Pot	127,{
+009-1,66,33,0	script	Pot	127,{
 	set @object, 1;
 	callfunc "Easter2009Pot";
 }
 
-009-1.gat,93,52,0	script	Tree	127,{
+009-1,93,52,0	script	Tree	127,{
 	set @object, 2;
 	callfunc "Easter2009Tree";
 }
 
-007-1.gat,37,22,0	script	Flowers	127,{
+007-1,37,22,0	script	Flowers	127,{
 	set @object, 3;
 	callfunc "Easter2009Flower";
 }
 
-008-1.gat,38,32,0	script	Tree	127,{
+008-1,38,32,0	script	Tree	127,{
 	set @object, 4;
 	callfunc "Easter2009Tree";
 }
 
-008-1.gat,43,21,0	script	Flowers	127,{
+008-1,43,21,0	script	Flowers	127,{
 	set @object, 5;
 	callfunc "Easter2009Flower";
 }
 
-018-1.gat,121,88,0	script	Tree	127,{
+018-1,121,88,0	script	Tree	127,{
 	set @object, 6;
 	callfunc "Easter2009Tree";
 }
 
-010-1.gat,103,73,0	script	Flowers	127,{
+010-1,103,73,0	script	Flowers	127,{
 	set @object, 7;
 	callfunc "Easter2009Flower";
 }
 
-010-1.gat,31,45,0	script	Rock	127,{
+010-1,31,45,0	script	Rock	127,{
 	set @object, 8;
 	callfunc "Easter2009Rock";
 }
 
-011-1.gat,83,39,0	script	Pot	127,{
+011-1,83,39,0	script	Pot	127,{
 	set @object, 9;
 	callfunc "Easter2009Pot";
 }
 
-011-1.gat,33,78,0	script	Tree	127,{
+011-1,33,78,0	script	Tree	127,{
 	set @object, 10;
 	callfunc "Easter2009Tree";
 }
 
-018-1.gat,64,98,0	script	Rock	127,{
+018-1,64,98,0	script	Rock	127,{
 	set @object, 11;
 	callfunc "Easter2009Rock";
 }
 
-012-1.gat,88,122,0	script	Flowers	127,{
+012-1,88,122,0	script	Flowers	127,{
 	set @object, 12;
 	callfunc "Easter2009Flower";
 }
 
-012-1.gat,97,32,0	script	Rock	127,{
+012-1,97,32,0	script	Rock	127,{
 	set @object, 13;
 	callfunc "Easter2009Rock";
 }
 
-012-1.gat,153,101,0	script	Tree	127,{
+012-1,153,101,0	script	Tree	127,{
 	set @object, 14;
 	callfunc "Easter2009Tree";
 }
 
-013-1.gat,118,92,0	script	Rock	127,{
+013-1,118,92,0	script	Rock	127,{
 	set @object, 15;
 	callfunc "Easter2009Rock";
 }
 
-013-1.gat,104,36,0	script	Flowers	127,{
+013-1,104,36,0	script	Flowers	127,{
 	set @object, 16;
 	callfunc "Easter2009Flower";
 }
 
-014-1.gat,100,37,0	script	Flowers	127,{
+014-1,100,37,0	script	Flowers	127,{
 	set @object, 17;
 	callfunc "Easter2009Flower";
 }
 
-014-1.gat,38,102,0	script	Tree	127,{
+014-1,38,102,0	script	Tree	127,{
 	set @object, 18;
 	callfunc "Easter2009Tree";
 }
 
-014-1.gat,54,50,0	script	Sign	127,{
+014-1,54,50,0	script	Sign	127,{
 	set @object, 19;
 	callfunc "Easter2009Sign";
 }
 
-015-1.gat,59,97,0	script	Rock	127,{
+015-1,59,97,0	script	Rock	127,{
 	set @object, 20;
 	callfunc "Easter2009Rock";
 }
 
-015-1.gat,29,25,0	script	Flowers	127,{
+015-1,29,25,0	script	Flowers	127,{
 	set @object, 21;
 	callfunc "Easter2009Flower";
 }
 
-016-1.gat,83,54,0	script	Pot	127,{
+016-1,83,54,0	script	Pot	127,{
 	set @object, 22;
 	callfunc "Easter2009Pot";
 }
 
-016-1.gat,62,83,0	script	Sign	127,{
+016-1,62,83,0	script	Sign	127,{
 	set @object, 23;
 	callfunc "Easter2009Sign";
 }
 
-016-1.gat,20,51,0	script	Tree	127,{
+016-1,20,51,0	script	Tree	127,{
 	set @object, 24;
 	callfunc "Easter2009Tree";
 }
 
-017-1.gat,77,32,0	script	Sign	127,{
+017-1,77,32,0	script	Sign	127,{
 	set @object, 25;
 	callfunc "Easter2009Sign";
 }
 
-017-1.gat,104,90,0	script	Tree	127,{
+017-1,104,90,0	script	Tree	127,{
 	set @object, 26;
 	callfunc "Easter2009Tree";
 }
 
-017-1.gat,37,76,0	script	Flowers	127,{
+017-1,37,76,0	script	Flowers	127,{
 	set @object, 27;
 	callfunc "Easter2009Flower";
 }
 
-009-1.gat,29,48,0	script	Flowers	127,{
+009-1,29,48,0	script	Flowers	127,{
 	set @object, 28;
 	callfunc "Easter2009Flower";
 }
 
-010-1.gat,127,99,0	script	Tree	127,{
+010-1,127,99,0	script	Tree	127,{
 	set @object, 29;
 	callfunc "Easter2009Tree";
 }
 
-011-1.gat,34,95,0	script	Rock	127,{
+011-1,34,95,0	script	Rock	127,{
 	set @object, 30;
 	callfunc "Easter2009Rock";
 }

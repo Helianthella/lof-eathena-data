@@ -915,7 +915,7 @@ L_Close:
 
 }
 
-042-2.gat,30,26,0|script|Debug0|154
+042-2,30,26,0|script|Debug0|154
 {
     callfunc "Debug";
     end;
@@ -925,7 +925,7 @@ OnInit:
     end;
 }
 
-001-1.gat,41,29,0|script|Debug1|154
+001-1,41,29,0|script|Debug1|154
 {
     callfunc "Debug";
     end;
@@ -935,7 +935,7 @@ OnInit:
     end;
 }
 
-009-1.gat,52,33,0|script|Debug2|154
+009-1,52,33,0|script|Debug2|154
 {
     callfunc "Debug";
     end;
@@ -945,7 +945,7 @@ OnInit:
     end;
 }
 
-020-1.gat,75,85,0|script|Debug3|154
+020-1,75,85,0|script|Debug3|154
 {
     callfunc "Debug";
     end;
@@ -955,7 +955,7 @@ OnInit:
     end;
 }
 
-botcheck.gat,50,28,0|script|Debug4|154
+botcheck,50,28,0|script|Debug4|154
 {
     callfunc "Debug";
     end;

@@ -1,7 +1,7 @@
 // A historian
 // takes part in quest given by 021-2/kylian.txt
 
-021-1.gat,130,125,0|script|Weellos|103
+021-1,130,125,0|script|Weellos|103
 {
     set QUEST_NorthTulimshar, QUEST_NorthTulimshar | $@knowWeellosNT;
     set @kylian, ((QUEST_NorthTulimshar & $@businessmanNT_MASK) >> $@businessmanNT_SHIFT);
@@ -11,7 +11,7 @@
         goto L_TrickOrTreat;
 
 L_Begin:
-    if isin("021-1.gat", 130, 120, 140, 125) goto L_In;
+    if isin("021-1", 130, 120, 140, 125) goto L_In;
 
     mes "[Weellos]";
     mes "\"This is a very historic building. One of the oldest in the area.\"";

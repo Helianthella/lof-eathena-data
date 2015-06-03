@@ -1,6 +1,6 @@
 //
 
-020-1.gat,78,85,0	script	Santa	105,{
+020-1,78,85,0	script	Santa	105,{
 	mes "[Santa Claus]";
 	mes "\"Ho! Ho! Ho!\"";
 	next;
@@ -112,7 +112,7 @@ L_Chat2:
 //016-1 33 87
 //020-1 98 116
 
-004-1.gat,51,25,0	script	Dasher	170,{
+004-1,51,25,0	script	Dasher	170,{
 	if (QUEST_xmas08_state & (1 << 1)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -158,7 +158,7 @@ L_Chat2:
 	close;
 }
 
-005-1.gat,178,41,0	script	Dancer	170,{
+005-1,178,41,0	script	Dancer	170,{
 	if (QUEST_xmas08_state & (1 << 2)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -203,7 +203,7 @@ L_Chat2:
 	close;
 }
 
-009-3.gat,23,105,0	script	Prancer	170,{
+009-3,23,105,0	script	Prancer	170,{
 	if (QUEST_xmas08_state & (1 << 3)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -250,7 +250,7 @@ L_Chat2:
 	close;
 }
 
-012-1.gat,47,38,0	script	Vixen	170,{
+012-1,47,38,0	script	Vixen	170,{
 	if (QUEST_xmas08_state & (1 << 4)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -295,7 +295,7 @@ L_Chat2:
 	close;
 }
 
-013-1.gat,130,21,0	script	Comet	170,{
+013-1,130,21,0	script	Comet	170,{
 	if (QUEST_xmas08_state & (1 << 5)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -356,7 +356,7 @@ L_Chat2:
 	close;
 }
 
-014-1.gat,91,19,0	script	Cupid	170,{
+014-1,91,19,0	script	Cupid	170,{
 	if (QUEST_xmas08_state & (1 << 6)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -404,7 +404,7 @@ L_Chat2:
 	close;
 }
 
-015-1.gat,50,76,0	script	Donner	170,{
+015-1,50,76,0	script	Donner	170,{
 	if (QUEST_xmas08_state & (1 << 7)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	
@@ -467,7 +467,7 @@ L_Chat2:
 	close;
 }
 
-016-1.gat,33,87,0	script	Blitzen	170,{
+016-1,33,87,0	script	Blitzen	170,{
 	if (QUEST_xmas08_state & (1 << 8)) goto L_ChatReinboo;
 	
 	mes "[Blitzen]";
@@ -540,7 +540,7 @@ L_Chat2:
 	close;
 }
 
-020-1.gat,98,116,0	script	Rudolf	170,{
+020-1,98,116,0	script	Rudolf	170,{
 	if (QUEST_xmas08_state & (1 << 9)) goto L_ChatReinboo;
 	if (QUEST_xmas08_state & 1) goto L_FoundReinboo;
 	

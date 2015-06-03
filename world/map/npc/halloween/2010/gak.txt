@@ -1,4 +1,4 @@
-010-1.gat,29,48,0	script	Gak	188,	{
+010-1,29,48,0	script	Gak	188,	{
 
         if ($hween10 == 2) goto L_Event_Over;
 

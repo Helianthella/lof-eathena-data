@@ -1,6 +1,6 @@
 // The Easter Bunny
 
-007-1.gat,32,30, 0	script	Easter Bunny	173,{
+007-1,32,30, 0	script	Easter Bunny	173,{
 	callfunc "ClearVariables";
 	if (QUEST_Easter09 == 1) goto L_CheckEggs;
 	if (QUEST_Easter09 == 2) goto L_Done;
